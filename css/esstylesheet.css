@@ -2,7 +2,7 @@
 
 * {
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 body {
@@ -12,35 +12,160 @@ body {
     margin: 0;
 }
 
-.container-navbar{
-    display: grid;
-    height: 80px;
-    grid-template-columns: 1fr 5fr;
-    margin: 40px auto;
+html {
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
 }
+
+a,
+a:hover {
+    text-decoration: none;
+}
+
+.container {
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+/* INTRODUCTION */
+
+.introduction {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-content: center;
+    margin-right: 50px;
+    column-gap: 30px;
+}
+
+.picture-es {
+    height: 300px;
+    width: 300px;
+}
+
+.introduction-text {
+    display: grid;
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+    align-content: center;
+    align-items: center;
+}
+
+.photo-of-me {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+}
+
+
+/* SCHRIFTEN */
 
 h1 {
     font-family: 'Young Serif', serif;
     font-weight: 600;
 }
 
-.container {
-    margin: auto;
+h2 {
+    font-weight: 400;
+    margin: 0;
 }
 
-nav li {
-    display: inline-block;
-    padding: 0px 20px;
+
+/* NAVIGATION */
+
+.logo {
+    position: fixed;
+    left: 50px;
+    top: 40px;
 }
 
-.logo{
-    width: 60px;
-    height: 60px;
+.dot-nav {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 50px;
+    display: grid;
+    grid-template-rows: repeat(4, auto);
+    gap: 25px;
+    align-items: center;
+    z-index: 1000;
 }
 
-.aboutme {
-    width: 1140px;
-    margin: auto;
+
+.dot {
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.dot:hover {
+    transform: scale(1.2);
+}
+
+.dot-text {
+    display: none;
+    font-weight: 500;
+    font-size: 14px;
+    margin-left: 30px;
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.dot:hover .dot-text {
+    display: block;
+}
+
+
+/* HINTERGRUNDFARBE */
+
+.rosa {
+    background-color: #E58C99;
+}
+
+.gold {
+    background-color: #B47F39;
+}
+
+.rot {
+    background-color: #DF3C31;
+}
+
+.petrol {
+    background-color: #4C746E;
+}
+
+/* TEXTFARBE  */
+
+.rosa-text {
+    color: #E58C99;
+}
+
+.gold-text {
+    color: #B47F39;
+}
+
+.rot-text {
+    color: #DF3C31;
+}
+
+.petrol-text {
+    color: #4C746E;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: auto;
+    margin-left: 200px;
+    gap: 20px;
 }
 
 
@@ -61,5 +186,3 @@ nav li {
         opacity: 0;
     }
 }
-
-

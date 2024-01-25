@@ -9,27 +9,40 @@
 </head>
 
 <body>
-  <header class="navbar">
-    <nav class="container-navbar">
-        <div class="logo-container">
-          <a href="index.html" class="logo-link"><img class="logo" src="./files/elisabethstagl_2_-removebg-preview.png"
-              alt="elisabeth-stagl-logo"></a>
-        </div>
-        <div class="nav-container">
-          <ul>
-            <li><a href="#">About Me</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="mailto:e.stagl@hotmail.com">Contact</a></li>
-          </ul>
-        </div>
+
+  <div class="navbar">
+    <div class="logo"><a href="index.html"><svg width="60" height="60" viewBox="0 0 103 79" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill-rule="evenodd" clip-rule="evenodd" d="M84.4124 16.9729C82.7566 19.5053 77.6814 21.7173 76.7178 16.9729C76.6547 16.6623 76.594 16.3565 76.5344 16.0562C75.6838 11.7685 75.0545 8.59637 70.7763 8.59637C63.862 9.5812 62.8696 13.9727 64.64 26.5182C65.3218 28.3688 66.1984 34.1155 66.1984 34.1155L81.1982 29.2454C81.1982 29.2454 97.2694 24.9598 99.4122 25.3494C101.555 25.739 103.698 31.3883 101.555 32.7519C100.479 33.4369 97.1896 33.9007 93.3679 34.4397C89.5823 34.9735 85.2738 35.5811 82.0748 36.5505C80.72 36.9611 79.1964 37.3976 77.6427 37.8427C71.8244 39.5097 65.5834 41.2978 66.1984 42.2972C66.9777 43.5634 67.075 61.9472 66.1984 65.2839C65.3218 68.6206 60.744 76.6547 55.1921 77.7512C49.6402 78.8477 44.965 77.5564 42.2377 74.3422C39.5105 71.1279 40.0949 60.7311 42.2377 55.2515C44.3806 49.772 58.5037 38.4985 58.5037 38.4985C58.0386 38.0142 57.5318 35.7936 57.0897 32.7519L47.9844 42.2972C43.2377 46.464 37.3677 50.7655 32.2054 51.1607C27.0432 51.5559 19.3485 49.0902 15.6472 45.3166C11.946 41.543 11.2642 36.5505 10.972 32.7519C10.908 31.92 10.9684 30.9528 11.1462 29.8676C5.85683 29.5519 0.17025 28.8844 0.383205 27.877C0.478595 27.4258 0.37501 26.3932 0.251627 25.1632C-0.0849582 21.8078 -0.568877 16.9838 2.43732 18.4869C4.56398 19.5502 9.62092 20.4381 14.0045 21.0472C14.8952 19.0061 15.9679 16.8225 17.2056 14.5378C20.9 8.27103 28.0172 2.62983 32.2054 1.75322C36.3937 0.876611 39.7053 1.31634 42.2377 3.72631C44.7702 6.13628 45.0624 11.0565 44.0884 14.5378C43.1144 18.0192 41.3299 20.5347 37.3677 23.791C31.188 28.3925 27.2729 29.834 19.3485 30.0246C19.2688 30.2637 19.1894 30.4951 19.1122 30.7203C18.0755 33.7434 17.4259 35.6379 21.5887 39.8622C25.4969 42.8958 28.1146 43.0041 33.569 42.2972C39.0235 41.5903 47.2668 33.6251 56.0564 21.9403C55.8316 17.7549 55.8196 13.6998 56.1661 11.0314C57.1402 3.53152 63.9582 1.38869 69.0231 0.219872C74.0879 -0.948947 82.0748 2.75232 84.4124 6.35615C86.7501 9.95999 86.0683 14.4405 84.4124 16.9729ZM21.9783 22.0127C21.0043 20.2594 27.725 9.64272 32.4002 8.3765C37.0755 7.11029 39.7053 9.35052 38.0495 12.9544C36.3937 16.5582 22.9523 23.7659 21.9783 22.0127ZM57.6272 48.9928C54.0233 49.9668 46.6208 63.3108 47.9844 66.6224C49.348 69.9341 54.6077 70.6159 57.6272 66.6224C60.6466 62.629 61.231 48.0188 57.6272 48.9928Z" fill="#4C746E"/>
+      </svg></a>
+      </div>
+    <nav class="dot-nav">
+      <div class="dot rosa" onclick="scrollToSection('about-me')"><span class="dot-text rosa-text">about</span></div>
+      <div class="dot gold" onclick="scrollToSection('projects')"> <span class="dot-text gold-text">projects</span></div>
+      <div class="dot rot" onclick="scrollToSection('contact')"> <span class="dot-text rot-text">contact</span></div>
+      <a href="./files/CV-23.pdf" target="_blank"><div class="dot petrol" onclick="scrollToSection('cv')"> <span class="dot-text petrol-text">CV</span></div></a>
     </nav>
-  </header>
-  <div class="container aboutme">
-    <h1><span id="writing"></span><span class="cursor">|</span></h1>
-    <h4 class="aboutme">Junior Software Developer</h4>
   </div>
-  
+
+  <div class="content">
+    <div class="container introduction">
+      <div class="introduction-text"><h1><span id="writing"></span><span class="cursor">|</span></h1><h2>I am a <span class="gold-text">junior software developer</span> with a passion for <span class="petrol-text">frontend</span> and <span class="rosa-text">webdesign</span>.</h2></div>
+      <div class="photo-of-me"><img class="picture-es" src="./files/elisabeth-stagl.png"></div>
+    </div>
+
+    <!-- Other sections -->
+    <div id="about-me" class="container aboutme ">
+      <h2>about me</h2>
+    </div>
+
+    <div id="projects" class="container projects ">
+      <h2>projects</h2>
+
+    </div>
+    <div id="contact" class="container contact ">
+    </div>
+
 </body>
 <script src="./javascript/writing.js"></script>
+<script src="./javascript/navigation.js"></script>
 
 </html>
